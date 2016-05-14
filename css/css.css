@@ -1,0 +1,143 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 13px;
+}
+/*内容*/
+.container{
+	width:1000px;
+	height:auto;
+	margin:0px auto;
+	margin-top: 30px;
+}
+
+/*广告区域*/
+.banner{
+	width:990px;
+	height:360px;
+	position: relative;
+	overflow: hidden;
+}
+/*图片外层*/
+.pics{
+	width: 990px;
+	height: 360px;
+}
+/*图片内层*/
+.pics ul {
+	width: 50000px;
+	height: 360px;
+	position: relative;
+}
+.pics ul li{
+	width: 990px;
+	height: 360px;
+	float: left;
+}
+/*固定大小*/
+.pics ul li a img{
+	width: 990px;
+	height: 360px;
+}
+
+/*居中的索引*/
+.nav{
+	width: 990px;
+	text-align: center;
+	position: absolute;
+    bottom: 0px;
+}
+.nav ul{
+	width:990px;
+	margin:0px auto;
+}
+.nav ul li{
+	display: inline-block;
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 21px;
+    opacity: 0.9;
+}
+.nav ul li a{
+    opacity: 0.5;
+    width: 15px;
+    height: 15px;
+    border-radius: 21px;
+    display: block;
+}
+.nav ul li a:hover{
+    background: #999;
+}
+.summary{
+	width: 980px;
+    height: 30px;
+    position: relative;
+    bottom: 24px;
+}
+
+.summary ul{
+	width: 150px;
+    height: 30px;
+	float: right;
+}
+.summary ul li{
+	position: absolute;
+	display: none;
+}
+.summary ul li p{
+	color:#000;
+	font-size: 14px;
+}
+
+
+
+
+/*上一张下一张*/
+.left{
+	position: absolute;
+	top: 50%;
+    left: 0px;
+}
+.right{
+	position: absolute;
+	top: 50%;
+    right: 0px;
+}
+
+/*当前索引*/
+.active a{
+    opacity: 0.9;
+	text-decoration: none;
+    width: 15px;
+    height: 15px;
+    background: #555;
+    border-radius: 21px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

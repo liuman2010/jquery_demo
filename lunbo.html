@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/css.css">
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<title>JS轮播示例</title>
+</head>
+<body>
+	<div class="container">
+		<div class="banner">
+			<div class="pics">
+				<ul>
+					<li><a href=""><img src="images/1.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/2.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/3.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/4.jpg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active"><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+				</ul>
+			</div>
+<!-- 
+			<div class="summary">
+				<ul>
+					<li><p>第一张图片的介绍</p></li>
+					<li><p>第二张图片的介绍</p></li>
+					<li><p>第三张图片的介绍</p></li>
+					<li><p>第四张图片的介绍</p></li>
+				</ul>
+			</div> -->
+
+			<div class="left"> <a href="javascript:;">上一张</a></div>
+			<div class="right"><a href="javascript:;">下一张</a></div>
+		</div>
+		<div class="main">
+			　将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。
+			　的元素特点：
+			将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。(准确地说，应用此特性的元素呈现为内联对象，周围元素保持在同一行，但可以设置宽度和高度地块元素的属性)
+			并不是所有浏览器都支持此属性，目前支持的浏览器有：Opera、Safari在IE中对内联元素使用，IE是不识别的，但使用在IE下会触发layout，从而使内联元素拥有了属性的表症。从上面的这个分析，也不难理解为什么IE下，对块元素设置属性无法实现的效果。这时块元素仅仅是被触发了layout，而它本就是行布局，所以触发后，块元素依然还是行布局，而不会如Opera中块元素呈递为内联对象。
+			IE下块元素如何实现的效果？
+			有两种方法：
+			1、先使用属性触发块元素，然后再定义，让块元素呈递为内联对象（两个要先后放在两个CSS声明中才有效果，这是IE的一个经典bug，如果先定义了，然后再将设回或block，layout不会消失）。代码如下（...为省略的其他属性内容）：
+			2、直接让块元素设置为内联对象呈递（设置属性），然后触发块元素的layout（如：zoom:1等）。
+		</div>
+	</div>
+</body>
+</html>
